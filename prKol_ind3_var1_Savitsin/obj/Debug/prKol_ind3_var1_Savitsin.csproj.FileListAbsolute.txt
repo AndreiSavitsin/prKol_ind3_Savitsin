@@ -1,0 +1,7 @@
+C:\Users\305-8\Desktop\Савицин ПР-21\prKol_ind3_Savitsin\prKol_ind3_var1_Savitsin\bin\Debug\prKol_ind3_var1_Savitsin.exe.config
+C:\Users\305-8\Desktop\Савицин ПР-21\prKol_ind3_Savitsin\prKol_ind3_var1_Savitsin\bin\Debug\prKol_ind3_var1_Savitsin.exe
+C:\Users\305-8\Desktop\Савицин ПР-21\prKol_ind3_Savitsin\prKol_ind3_var1_Savitsin\bin\Debug\prKol_ind3_var1_Savitsin.pdb
+C:\Users\305-8\Desktop\Савицин ПР-21\prKol_ind3_Savitsin\prKol_ind3_var1_Savitsin\obj\Debug\prKol_ind3_var1_Savitsin.csproj.AssemblyReference.cache
+C:\Users\305-8\Desktop\Савицин ПР-21\prKol_ind3_Savitsin\prKol_ind3_var1_Savitsin\obj\Debug\prKol_ind3_var1_Savitsin.csproj.CoreCompileInputs.cache
+C:\Users\305-8\Desktop\Савицин ПР-21\prKol_ind3_Savitsin\prKol_ind3_var1_Savitsin\obj\Debug\prKol_ind3_var1_Savitsin.exe
+C:\Users\305-8\Desktop\Савицин ПР-21\prKol_ind3_Savitsin\prKol_ind3_var1_Savitsin\obj\Debug\prKol_ind3_var1_Savitsin.pdb
