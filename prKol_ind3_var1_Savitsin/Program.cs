@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,20 +17,20 @@ namespace prKol_ind3_var1_Savitsin
             {
                 string text = File.ReadAllText(filePath);
 
-                Stack<char> stack = new Stack<char>();
                 var numbers = from c in text where char.IsDigit(c) select c;
+                ArrayList arraylist = new ArrayList();
 
                 foreach (char c in text)
                 {
                     if (char.IsDigit(c))
                     {
-                        stack.Push(c);
+                        arraylist.Add(c);
                     }
                 }
 
                 Console.WriteLine("Числа в обратном порядке:");
 
-                if (numbers.Count() == 0)
+                if (numbers.Count() == 0 || arraylist.Count == 0)
                 {
                     Console.WriteLine("Нет чисел в файле");
                 }
@@ -41,9 +41,9 @@ namespace prKol_ind3_var1_Savitsin
                         Console.Write(c);
                     }
                     Console.WriteLine();
-                    while (stack.Count > 0)
+                    for (int i = arraylist.Count-1; i >= 0; i--)
                     {
-                        Console.Write(stack.Pop());
+                        Console.Write((char)arraylist[i]);
                     }
                 }
             }

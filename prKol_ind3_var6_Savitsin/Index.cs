@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,21 +10,21 @@ namespace prKol_ind3_var6_Savitsin
 {
     public class Index
     {
-        private Stack<string> words = new Stack<string>();
-        private Stack<int> pages = new Stack<int>();
+        ArrayList wordsList = new ArrayList();
+        ArrayList pagesList = new ArrayList();
 
         public void Add(string word, int pageNumber)
         {
-            words.Push(word);
-            pages.Push(pageNumber);
+            wordsList.Add(word);
+            pagesList.Add(pageNumber);
         }
 
         string filename = "file.txt";
 
         public void LoadFromFile()
         {
-            words.Clear();
-            pages.Clear();
+            wordsList.Clear();
+            pagesList.Clear();
 
             string[] lines = File.ReadAllLines(filename);
 
@@ -39,8 +40,8 @@ namespace prKol_ind3_var6_Savitsin
                         int page;
                         if (int.TryParse(parts[i], out page))
                         {
-                            words.Push(word);
-                            pages.Push(page);
+                            wordsList.Add(word);
+                            pagesList.Add(page);
                         }
                     }
                 }
@@ -51,12 +52,9 @@ namespace prKol_ind3_var6_Savitsin
         {
             string result = "";
 
-            string[] wordsArray = words.ToArray();
-            int[] pagesArray = pages.ToArray();
-
-            for (int i = 0; i < wordsArray.Length; i++)
+            for (int i = 0; i < wordsList.Count; i++)
             {
-                result = result + wordsArray[i] + ": " + pagesArray[i] + "\r\n";
+                result = result + wordsList[i] + ": " + pagesList[i] + "\r\n";
             }
 
             if (result == "") result = "Пусто";
@@ -67,14 +65,13 @@ namespace prKol_ind3_var6_Savitsin
         public string Find(string searchWord)
         {
             string result = "";
-            string[] wordsArray = words.ToArray();
-            int[] pagesArray = pages.ToArray();
 
-            for (int i = 0; i < wordsArray.Length; i++)
+            for (int i = 0; i < wordsList.Count; i++)
             {
-                if (wordsArray[i].ToLower() == searchWord.ToLower())
+                string word = (string)wordsList[i];
+                if (word.ToLower() == searchWord.ToLower())
                 {
-                    result = result + wordsArray[i] + ": " + pagesArray[i] + "\r\n";
+                    result = result + wordsList[i] + ": " + pagesList[i] + "\r\n";
                 }
             }
 
@@ -86,31 +83,21 @@ namespace prKol_ind3_var6_Savitsin
 
         public bool Delete(string deleteWord)
         {
-            Stack<string> tempWords = new Stack<string>();
-            Stack<int> tempPages = new Stack<int>();
             bool found = false;
+            int i = 0;
 
-            while (words.Count > 0)
-            {
-                string w = words.Pop();
-                int p = pages.Pop();
-
-                if (w.ToLower() != deleteWord.ToLower())
+            while (i < wordsList.Count)
+            {  
+                string word = (string)wordsList[i];
+                if (word.ToLower() == deleteWord.ToLower())
                 {
-                    tempWords.Push(w);
-                    tempPages.Push(p);
-                }
-                else
-                {
+                    wordsList.RemoveAt(i);
+                    pagesList.RemoveAt(i);
                     found = true;
                 }
+                else i++;
             }
 
-            while (tempWords.Count > 0)
-            {
-                words.Push(tempWords.Pop());
-                pages.Push(tempPages.Pop());
-            }
 
             return found;
         }
