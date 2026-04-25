@@ -16,7 +16,9 @@ namespace prKol_ind3_var1_Savitsin
             if (File.Exists(filePath))
             {
                 string text = File.ReadAllText(filePath);
+
                 Stack<char> stack = new Stack<char>();
+                var numbers = from c in text where char.IsDigit(c) select c;
 
                 foreach (char c in text)
                 {
@@ -28,12 +30,17 @@ namespace prKol_ind3_var1_Savitsin
 
                 Console.WriteLine("Числа в обратном порядке:");
 
-                if (stack.Count == 0)
+                if (numbers.Count() == 0)
                 {
                     Console.WriteLine("Нет чисел в файле");
                 }
                 else
                 {
+                    foreach (char c in numbers.Reverse())
+                    {
+                        Console.Write(c);
+                    }
+                    Console.WriteLine();
                     while (stack.Count > 0)
                     {
                         Console.Write(stack.Pop());

@@ -44,66 +44,59 @@ namespace prKol_ind3_var6_Savitsin
             // 
             // txtWord
             // 
-            this.txtWord.Location = new System.Drawing.Point(129, 138);
-            this.txtWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWord.Location = new System.Drawing.Point(97, 112);
             this.txtWord.Name = "txtWord";
-            this.txtWord.Size = new System.Drawing.Size(132, 22);
+            this.txtWord.Size = new System.Drawing.Size(100, 20);
             this.txtWord.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(125, 118);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(94, 96);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 16);
+            this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Введите слово:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(313, 118);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(235, 96);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(176, 16);
+            this.label2.Size = new System.Drawing.Size(139, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Введите номер страницы:";
             // 
             // txtPage
             // 
-            this.txtPage.Location = new System.Drawing.Point(317, 138);
-            this.txtPage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPage.Location = new System.Drawing.Point(238, 112);
             this.txtPage.Name = "txtPage";
-            this.txtPage.Size = new System.Drawing.Size(180, 22);
+            this.txtPage.Size = new System.Drawing.Size(136, 20);
             this.txtPage.TabIndex = 2;
             // 
             // txtResult
             // 
-            this.txtResult.Location = new System.Drawing.Point(129, 304);
-            this.txtResult.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtResult.Location = new System.Drawing.Point(97, 247);
             this.txtResult.Multiline = true;
             this.txtResult.Name = "txtResult";
             this.txtResult.ReadOnly = true;
-            this.txtResult.Size = new System.Drawing.Size(535, 209);
+            this.txtResult.Size = new System.Drawing.Size(402, 171);
             this.txtResult.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(129, 281);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(97, 228);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Результат:";
             // 
             // btnAddWord
             // 
-            this.btnAddWord.Location = new System.Drawing.Point(129, 186);
-            this.btnAddWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddWord.Location = new System.Drawing.Point(97, 151);
             this.btnAddWord.Name = "btnAddWord";
-            this.btnAddWord.Size = new System.Drawing.Size(100, 28);
+            this.btnAddWord.Size = new System.Drawing.Size(75, 23);
             this.btnAddWord.TabIndex = 6;
             this.btnAddWord.Text = "Добавить слово";
             this.btnAddWord.UseVisualStyleBackColor = true;
@@ -111,9 +104,10 @@ namespace prKol_ind3_var6_Savitsin
             // 
             // btnLoadFromFile
             // 
-            this.btnLoadFromFile.Location = new System.Drawing.Point(249, 186);
+            this.btnLoadFromFile.Location = new System.Drawing.Point(187, 151);
+            this.btnLoadFromFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLoadFromFile.Name = "btnLoadFromFile";
-            this.btnLoadFromFile.Size = new System.Drawing.Size(182, 28);
+            this.btnLoadFromFile.Size = new System.Drawing.Size(136, 23);
             this.btnLoadFromFile.TabIndex = 7;
             this.btnLoadFromFile.Text = "Загрузить из файла";
             this.btnLoadFromFile.UseVisualStyleBackColor = true;
@@ -121,9 +115,10 @@ namespace prKol_ind3_var6_Savitsin
             // 
             // btnSearchWord
             // 
-            this.btnSearchWord.Location = new System.Drawing.Point(580, 186);
+            this.btnSearchWord.Location = new System.Drawing.Point(435, 151);
+            this.btnSearchWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearchWord.Name = "btnSearchWord";
-            this.btnSearchWord.Size = new System.Drawing.Size(150, 28);
+            this.btnSearchWord.Size = new System.Drawing.Size(112, 23);
             this.btnSearchWord.TabIndex = 9;
             this.btnSearchWord.Text = "Найти слово";
             this.btnSearchWord.UseVisualStyleBackColor = true;
@@ -131,9 +126,10 @@ namespace prKol_ind3_var6_Savitsin
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(132, 233);
+            this.btnDelete.Location = new System.Drawing.Point(99, 189);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(97, 31);
+            this.btnDelete.Size = new System.Drawing.Size(73, 25);
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Удалить слово";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -141,19 +137,20 @@ namespace prKol_ind3_var6_Savitsin
             // 
             // btnShow
             // 
-            this.btnShow.Location = new System.Drawing.Point(457, 186);
+            this.btnShow.Location = new System.Drawing.Point(343, 151);
+            this.btnShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(100, 28);
+            this.btnShow.Size = new System.Drawing.Size(75, 43);
             this.btnShow.TabIndex = 8;
-            this.btnShow.Text = "Показать";
+            this.btnShow.Text = "Показать всё";
             this.btnShow.UseVisualStyleBackColor = true;
             this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1265, 650);
+            this.ClientSize = new System.Drawing.Size(949, 528);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSearchWord);
             this.Controls.Add(this.btnShow);
@@ -165,7 +162,6 @@ namespace prKol_ind3_var6_Savitsin
             this.Controls.Add(this.txtPage);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtWord);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
